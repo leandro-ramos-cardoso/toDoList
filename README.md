@@ -1,12 +1,37 @@
-# React + Vite
+# 📝 ToDo List com React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Uma aplicação simples de **lista de tarefas** feita com **React**, com foco em aprendizado de `useState`, `useEffect`, manipulação de listas e armazenamento local com `localStorage`. O projeto conta com uma interface intuitiva, alertas personalizados e um layout responsivo para dispositivos móveis.
 
-Currently, two official plugins are available:
+## 🚀 Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ✅ Adicionar novas tarefas
+- ❌ Remover tarefas individualmente
+- 🧹 Limpar todas as tarefas com confirmação
+- 💾 Armazenamento no `localStorage` para manter as tarefas salvas
+- 🌓 Tema claro/escuro (via botão toggle, se ativado) # Em Desenvolvimento
+- 📱 Layout totalmente responsivo com media queries
 
-## Expanding the ESLint configuration
+## 🧪 Tecnologias Utilizadas
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- [React](https://react.dev/)
+- [JavaScript ES6+](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+- [Vite](https://vitejs.dev/)
+- [SweetAlert2](https://sweetalert2.github.io/)
+- [React Icons](https://react-icons.github.io/react-icons)
+- [TailwindCSS](https://tailwindcss.com/) *(opcional, se estiver usando)*
+- [CSS Media Queries](https://developer.mozilla.org/pt-BR/docs/Web/CSS/Media_Queries/Using_media_queries)
+
+## 📦 Instalação
+
+```bash
+# Clone o repositório
+git clone https://github.com/seu-usuario/seu-repositorio.git
+
+# Acesse a pasta do projeto
+cd seu-repositorio
+
+# Instale as dependências
+npm install
+
+# Inicie o servidor de desenvolvimento
+npm run dev
