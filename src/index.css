@@ -1,0 +1,545 @@
+
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    --overflow-y: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: flex-start;
+    width: 100vw;
+    margin: 0 auto;
+}
+
+.main {
+  width: 800px;
+}
+
+.btn{
+    margin-top: 50px;
+    margin-right: 100px;
+    cursor: pointer;
+    background-color: #6495ed;
+    color: #fff;
+    padding: 15px;
+    border-radius: 12px;
+    border: none;
+    width: 400px;
+    font-size: 30px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+    background-color: #4d8ef7;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+}
+
+.exportaDados{
+    cursor: pointer;
+    background-color: #7e57c2;
+    color: #fff;
+    padding: 15px;
+    border-radius: 12px;
+    border: none;
+    width: 400px;
+    font-size: 30px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.exportaDados:hover {
+    background-color: #64459b;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  width: 67vw;
+  display: flex;
+  margin: 20px;
+  gap: 10px;
+}
+
+.btnRemover{
+  width: 20px;
+  background-color: #f1326c;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+}
+
+.btnRemover:hover{
+  background-color: #bb2c57;
+}
+
+.btn-rm:hover {
+    cursor: pointer;
+    background-color: #a04444;
+}
+
+.btn-zerar:hover {
+    cursor: pointer;
+    background-color: #d62828;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+}
+
+.btn-rm{
+    background-color: rgb(237, 100, 100);
+    color: #fff;
+    padding: 30px;
+    border-radius: 50px;
+    border: none;
+    width: 400px;
+    font-size: 30px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-zerar {
+    margin-top: 50px;
+    background-color: #e63946;
+    color: #fff;
+    padding: 15px;
+    border-radius: 12px;
+    border: none;
+    width: 400px;
+    font-size: 30px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-pular2 {
+    background-color: #8933c2;
+    color: #fff;
+    padding: 30px;
+    border-radius: 50px;
+    border: none;
+    width: 400px;
+    font-size: 30px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-pular2:hover{
+    background-color: #4e1e6e;
+    cursor: pointer;
+}
+
+.container2 input {
+    width: 100%;
+    height: 80px;
+    --padding: 25px;
+    --margin-right: 20px;
+    font-size: 20px;
+    border-radius: 15px;
+}
+
+.container2 button {
+    background-color: #2f9e2f;
+    color: #fff;
+    font-size: 20px;
+    padding: 25px;
+    width: 100%;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.container2 button:hover {
+    background-color: #257c25;
+    color: #fff;
+}
+
+.container {
+    padding: 250px;
+}
+
+input{
+  width: 64vw;
+  padding: 16px 20px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  outline: none;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #5b9dff;
+}
+
+input::placeholder {
+  color: #999;
+  opacity: 1; /* controla a transparência do placeholder */
+}
+
+.btn-removerone{
+  border: none;
+  background-color: #e63946;
+  color: #fff;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.btn-removerone:hover{
+    cursor: pointer;
+    background-color: #d62828;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+}
+
+footer {
+  color: #8b8282c4;
+  font-size: 20px;
+  text-align: center;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+/* RESPONSIVO */
+/* ----------------------------- */
+/* CELULARES MUITO PEQUENOS (<480px) */
+@media (max-width: 480px) {
+  h3 {
+    font-size: 1.4rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+
+  input {
+    width: 90%;
+    margin-bottom: 40px;
+  }
+
+  ul {
+    margin-left: 0;
+    margin-right: 0;
+    width: 90%;
+  }
+
+  .btn, .btn-zerar, .exportaDados {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 1rem;
+    padding: 0.6rem;
+    gap: 6px;
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 0.6rem 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  h3 {
+    font-size: 1.6rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  input {
+    width: 92%;
+    margin-bottom: 45px;
+  }
+
+  ul {
+    width: 92%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .btn, .btn-zerar, .exportaDados {
+    width: 92%;
+    margin: 0 auto;
+    font-size: 1.05rem;
+    padding: 0.7rem;
+    gap: 8px;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  h3 {
+    font-size: 1.75rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+
+  input {
+    margin-bottom: 50px;
+    width: 90%;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .main2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn, .btn-zerar, .exportaDados {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 90%;
+  }
+
+  .btn-zerar {
+    margin-top: 60px;
+  }
+
+  button {
+    font-size: 1.1rem;
+    padding: 0.8rem 1.5rem;
+  }
+}
+
+/* Laptops grandes (min 1024px) */
+@media (min-width: 1024px) {
+  body {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  h3 {
+    font-size: 2.2rem;
+  }
+
+  p {
+    font-size: 1.3rem;
+  }
+}
+
+/* Monitores grandes (min 1440px) */
+@media (min-width: 1440px) {
+  h3 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+
+  button {
+    font-size: 1.3rem;
+    padding: 1rem 2rem;
+  }
+}
+
+/* MEGA SENA */
+.btn-mega{
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+    padding: 30px;
+    border-radius: 50px;
+    border: none;
+    width: 400px;
+    font-size: 30px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-mega:hover {
+    background-color: rgb(37, 161, 66);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+}
+
+.btn-mega:disabled {
+  background-color: #cccccc; /* cinza claro */
+  cursor: not-allowed; /* cursor padrão de "não permitido" */
+  color: #666666; /* texto cinza escuro */
+}
+
+.btn-reiniciar{
+    background-color: #ff7043;
+    color: #fff;
+    cursor: pointer;
+    padding: 30px;
+    border-radius: 50px;
+    border: none;
+    width: 400px;
+    font-size: 30px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-reiniciar:hover {
+    background-color: #fc6334;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+}
+
+.btn-all:disabled {
+  background-color: #cccccc; /* cinza claro */
+  cursor: not-allowed; /* cursor padrão de "não permitido" */
+  color: #666666; /* texto cinza escuro */
+}
+
+.alteraTema{
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+}
+
+@theme inline {
+    --radius-sm: calc(var(--radius) - 4px);
+    --radius-md: calc(var(--radius) - 2px);
+    --radius-lg: var(--radius);
+    --radius-xl: calc(var(--radius) + 4px);
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+    --color-card: var(--card);
+    --color-card-foreground: var(--card-foreground);
+    --color-popover: var(--popover);
+    --color-popover-foreground: var(--popover-foreground);
+    --color-primary: var(--primary);
+    --color-primary-foreground: var(--primary-foreground);
+    --color-secondary: var(--secondary);
+    --color-secondary-foreground: var(--secondary-foreground);
+    --color-muted: var(--muted);
+    --color-muted-foreground: var(--muted-foreground);
+    --color-accent: var(--accent);
+    --color-accent-foreground: var(--accent-foreground);
+    --color-destructive: var(--destructive);
+    --color-border: var(--border);
+    --color-input: var(--input);
+    --color-ring: var(--ring);
+    --color-chart-1: var(--chart-1);
+    --color-chart-2: var(--chart-2);
+    --color-chart-3: var(--chart-3);
+    --color-chart-4: var(--chart-4);
+    --color-chart-5: var(--chart-5);
+    --color-sidebar: var(--sidebar);
+    --color-sidebar-foreground: var(--sidebar-foreground);
+    --color-sidebar-primary: var(--sidebar-primary);
+    --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+    --color-sidebar-accent: var(--sidebar-accent);
+    --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+    --color-sidebar-border: var(--sidebar-border);
+    --color-sidebar-ring: var(--sidebar-ring);
+}
+
+:root {
+    --radius: 0.625rem;
+    --background: oklch(1 0 0);
+    --foreground: oklch(0.13 0.028 261.692);
+    --card: oklch(1 0 0);
+    --card-foreground: oklch(0.13 0.028 261.692);
+    --popover: oklch(1 0 0);
+    --popover-foreground: oklch(0.13 0.028 261.692);
+    --primary: oklch(0.21 0.034 264.665);
+    --primary-foreground: oklch(0.985 0.002 247.839);
+    --secondary: oklch(0.967 0.003 264.542);
+    --secondary-foreground: oklch(0.21 0.034 264.665);
+    --muted: oklch(0.967 0.003 264.542);
+    --muted-foreground: oklch(0.551 0.027 264.364);
+    --accent: oklch(0.967 0.003 264.542);
+    --accent-foreground: oklch(0.21 0.034 264.665);
+    --destructive: oklch(0.577 0.245 27.325);
+    --border: oklch(0.928 0.006 264.531);
+    --input: oklch(0.928 0.006 264.531);
+    --ring: oklch(0.707 0.022 261.325);
+    --chart-1: oklch(0.646 0.222 41.116);
+    --chart-2: oklch(0.6 0.118 184.704);
+    --chart-3: oklch(0.398 0.07 227.392);
+    --chart-4: oklch(0.828 0.189 84.429);
+    --chart-5: oklch(0.769 0.188 70.08);
+    --sidebar: oklch(0.985 0.002 247.839);
+    --sidebar-foreground: oklch(0.13 0.028 261.692);
+    --sidebar-primary: oklch(0.21 0.034 264.665);
+    --sidebar-primary-foreground: oklch(0.985 0.002 247.839);
+    --sidebar-accent: oklch(0.967 0.003 264.542);
+    --sidebar-accent-foreground: oklch(0.21 0.034 264.665);
+    --sidebar-border: oklch(0.928 0.006 264.531);
+    --sidebar-ring: oklch(0.707 0.022 261.325);
+}
+
+.dark {
+    --background: oklch(0.13 0.028 261.692);
+    --foreground: oklch(0.985 0.002 247.839);
+    --card: oklch(0.21 0.034 264.665);
+    --card-foreground: oklch(0.985 0.002 247.839);
+    --popover: oklch(0.21 0.034 264.665);
+    --popover-foreground: oklch(0.985 0.002 247.839);
+    --primary: oklch(0.928 0.006 264.531);
+    --primary-foreground: oklch(0.21 0.034 264.665);
+    --secondary: oklch(0.278 0.033 256.848);
+    --secondary-foreground: oklch(0.985 0.002 247.839);
+    --muted: oklch(0.278 0.033 256.848);
+    --muted-foreground: oklch(0.707 0.022 261.325);
+    --accent: oklch(0.278 0.033 256.848);
+    --accent-foreground: oklch(0.985 0.002 247.839);
+    --destructive: oklch(0.704 0.191 22.216);
+    --border: oklch(1 0 0 / 10%);
+    --input: oklch(1 0 0 / 15%);
+    --ring: oklch(0.551 0.027 264.364);
+    --chart-1: oklch(0.488 0.243 264.376);
+    --chart-2: oklch(0.696 0.17 162.48);
+    --chart-3: oklch(0.769 0.188 70.08);
+    --chart-4: oklch(0.627 0.265 303.9);
+    --chart-5: oklch(0.645 0.246 16.439);
+    --sidebar: oklch(0.21 0.034 264.665);
+    --sidebar-foreground: oklch(0.985 0.002 247.839);
+    --sidebar-primary: oklch(0.488 0.243 264.376);
+    --sidebar-primary-foreground: oklch(0.985 0.002 247.839);
+    --sidebar-accent: oklch(0.278 0.033 256.848);
+    --sidebar-accent-foreground: oklch(0.985 0.002 247.839);
+    --sidebar-border: oklch(1 0 0 / 10%);
+    --sidebar-ring: oklch(0.551 0.027 264.364);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+    }
+  body {
+    @apply bg-background text-foreground;
+    }
+}
+
